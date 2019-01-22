@@ -29,3 +29,12 @@ button = driver.find_element_by_id("J-login-btn")
 #一定要等待足够时间才可以
 time.sleep(10)
 button.click()
+password = driver.find_element_by_id("password_rsainput")
+
+for i in range(password1.__len__()):  #根据你的密码长度设置
+    time.sleep(random.random())
+    password.send_keys(password1[i])
+    print("输入",password1[i])
+time.sleep(1)
+button = driver.find_element_by_id("J-login-btn")
+button.click()
